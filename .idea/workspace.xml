@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdf54986-8419-47d4-a338-4510d38ec3bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/git/introduce" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/git/introduce" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -352,6 +350,14 @@
       <workItem from="1595556043066" duration="5983000" />
       <workItem from="1595903396056" duration="16466000" />
     </task>
+    <task id="LOCAL-00001" summary="info:20200729">
+      <created>1596017219439</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596017219439</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -387,7 +393,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163192000" />
+    <option name="totallyTimeSpent" value="163237000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -400,7 +406,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="-8" width="1858" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49811321" visible="true" weight="0.24916574" />
       <window_info id="Structure" order="1" sideWeight="0.5018868" side_tool="true" weight="0.19744161" />
@@ -470,6 +475,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="info:20200729" />
+    <option name="LAST_COMMIT_MESSAGE" value="info:20200729" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
