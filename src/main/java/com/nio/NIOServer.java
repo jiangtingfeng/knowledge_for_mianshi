@@ -9,6 +9,7 @@ import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Iterator;
+import java.util.Scanner;
 import java.util.Set;
 
 /**
@@ -23,6 +24,7 @@ public class NIOServer {
         //获取serverSocketChannel的通道/并对相关参数进行设置/以及将socket的channel的注册到选择器上进行绑定
         ServerSocketChannel ssChannel = ServerSocketChannel.open();
         ssChannel.configureBlocking(false);
+        //将选择器注册到ServerSocketChannel中/可以指定相应的操作参数
         ssChannel.register(selector, SelectionKey.OP_ACCEPT);
         //获取socket
         ServerSocket serverSocket = ssChannel.socket();
@@ -30,49 +32,48 @@ public class NIOServer {
         serverSocket.bind(inetSocketAddress);
 
         while (true) {
+            /** 使用selector.select() 来监听到达的事件，他会一直阻塞直到有至少一个事件到达*/
             selector.select();
             Set<SelectionKey> keys = selector.selectedKeys();
             Iterator<SelectionKey> keyIterator = keys.iterator();
             while (keyIterator.hasNext()) {
-                SelectionKey key = keyIterator.next();
-                if (key.isAcceptable()) {
-                    ServerSocketChannel ssChannel1 = (ServerSocketChannel) key.channel();
-                    // 服务器会为每个新连接创建一个 SocketChannel
-                    SocketChannel sChannel = ssChannel1.accept();
-                    sChannel.configureBlocking(false);
-                    // 这个新连接主要用于从客户端读取数据
-                    sChannel.register(selector, SelectionKey.OP_READ);
-                } else if (key.isReadable()) {
-                    SocketChannel sChannel = (SocketChannel) key.channel();
-                    System.out.println(readDataFromSocketChannel(sChannel));
-                    sChannel.close();
-                }
                 keyIterator.remove();
+                //分发事件
+                SelectionKey key = keyIterator.next();
+                dispatch(key,selector);
             }
         }
     }
-    /*private static String readDataFromSocketChannel(SocketChannel sChannel) throws IOException {
-        ByteBuffer buffer = ByteBuffer.allocate(1024);
-        StringBuilder data = new StringBuilder();
-        while (true) {
-            buffer.clear();
-            int n = sChannel.read(buffer);
-            if (n == -1) {
-                break;
-            }
-            //切换模式
-            buffer.flip();
-            int limit = buffer.limit();
-            char[] dst = new char[limit];
-            for (int i = 0; i < limit; i++) {
-                dst[i] = (char) buffer.get(i);
-            }
-            data.append(dst);
-            buffer.clear();
+
+    private static void dispatch(SelectionKey key,Selector selector) throws IOException {
+        if (key.isAcceptable()) {
+            ServerSocketChannel ssChannel1 = (ServerSocketChannel) key.channel();
+            // 服务器会为每个新连接创建一个 SocketChannel
+            SocketChannel sChannel = ssChannel1.accept();
+            sChannel.configureBlocking(false);
+            // 这个新连接主要用于从客户端读取数据
+            sChannel.register(selector, SelectionKey.OP_READ);
+        } else if (key.isReadable()) {
+            SocketChannel sChannel = (SocketChannel) key.channel();
+            System.out.println(readDataFromSocketChannel(sChannel));
+            sChannel.close();
+        } else if (key.isWritable()) {
+            SocketChannel sChannel = (SocketChannel) key.channel();
+            System.out.println(writeDataFromSocketChannel(sChannel));
+            sChannel.close();
         }
-        return data.toString();
     }
-*/
+
+    private static String writeDataFromSocketChannel(SocketChannel sChannel) throws IOException {
+        ByteBuffer byteBuffer = ByteBuffer.allocateDirect(1024);
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        byte[] bytes = str.getBytes();
+        byteBuffer.put(bytes);
+        sChannel.write(byteBuffer);
+        return str;
+    }
+
     private static String readDataFromSocketChannel(SocketChannel sChannel) throws IOException {
         ByteBuffer byteBuffer = ByteBuffer.allocateDirect(1024);
         StringBuffer dataStr = new StringBuffer();

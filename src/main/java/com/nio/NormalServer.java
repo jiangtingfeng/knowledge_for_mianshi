@@ -22,19 +22,6 @@ public class NormalServer {
         ServerSocket serverSocket = new ServerSocket();
         serverSocket.bind(address);
         //获取一个请求
-        /*Socket accept = null;
-        try {
-            //获取客户端连接
-            accept = serverSocket.accept();
-            InputStream inputStream = accept.getInputStream();
-            byte[] b = new byte[1024];
-            inputStream.read(b);
-            System.out.println(new String(b));
-        }catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            accept.close();
-        }*/
         Socket accept = null;
         //使用多线程对客户端进行监听一直处于监听状态
         while (true) {
