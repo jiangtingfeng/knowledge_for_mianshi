@@ -4,7 +4,6 @@
  */
 package com.nio;
 
-
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -61,19 +60,18 @@ public class ClassicReactor {
                 r.run();
             }
         }
-
         /** class Reactor continued*/
         class Acceptor implements Runnable {  // inner
-
             @Override
             public void run() {
                 SocketChannel accept = null;
                 try {
                     accept = serverSocketChannel.accept();
                     if (accept != null) {
-
+                        new Handler(accept,selector);
                     }
                 } catch (IOException e) {
+
                 }
             }
         }
@@ -162,5 +160,4 @@ public class ClassicReactor {
             }
         }
     }
-
 }

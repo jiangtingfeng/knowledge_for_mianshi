@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdf54986-8419-47d4-a338-4510d38ec3bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/io_learn/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/io_learn/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/io_learn/InternetDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/io_learn/SerializableDemo_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/io_learn/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/io_learn/SocketsDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/io_learn/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/io_learn/introduce" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nio/ClassicReactor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nio/ClassicServerSocker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/systemDesign/readme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nio/NIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nio/NIOServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nio/NormalServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nio/NormalServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nio/NormalServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nio/NormalServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nio/NormalServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nio/NormalServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/synchronized_ReentrantLock/ThreadLocalExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/synchronized_ReentrantLock/ThreadLocalExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nio/ClassicReactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nio/ClassicReactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nio/NIOServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nio/NIOServer.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/ClassicReactor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="122" column="27" lean-forward="true" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
+            <state relative-caret-position="459">
+              <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3139#3140#0" expanded="true" />
@@ -48,6 +35,15 @@
                 <element signature="e#3251#3252#0" expanded="true" />
                 <element signature="e#3287#3288#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/systemDesign/readme">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="801">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -91,8 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/designerPartten/memento/PreviousCalculationToOriginator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/designerPartten/memento/Calculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/designerPartten/memento/PreviousCalculationImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/designerPartten/memento/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/designerPartten/memento/CalculatorImp.java" />
@@ -141,7 +135,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/nio/ClassicServerSocker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nio/NIOServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/systemDesign.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nio/ClassicReactor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/systemDesign/readme" />
       </list>
     </option>
   </component>
@@ -189,10 +185,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1974" />
-    <option name="y" value="-8" />
-    <option name="width" value="1394" />
-    <option name="height" value="916" />
+    <option name="x" value="70" />
+    <option name="width" value="1858" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -241,37 +236,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="nio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="nio" type="462c0819:PsiDirectoryNode" />
+              <item name="systemDesign" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -434,7 +399,7 @@
       <workItem from="1595903396056" duration="16466000" />
       <workItem from="1596417280012" duration="28000" />
       <workItem from="1596613018193" duration="27000" />
-      <workItem from="1596684920070" duration="31587000" />
+      <workItem from="1596684920070" duration="41591000" />
     </task>
     <task id="LOCAL-00001" summary="info:20200729">
       <created>1596017219439</created>
@@ -443,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596017219439</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="info:20200811  --  nio">
+      <created>1597136330563</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597136330563</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -479,7 +451,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214669000" />
+    <option name="totallyTimeSpent" value="224673000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,11 +463,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1974" y="-8" width="1394" height="916" extended-state="6" />
+    <frame x="70" y="-8" width="1858" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49811321" visible="true" weight="0.20539731" />
-      <window_info id="Structure" order="1" sideWeight="0.5018868" side_tool="true" weight="0.19744161" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49688148" visible="true" weight="0.17575084" />
+      <window_info id="Structure" order="1" sideWeight="0.5031185" side_tool="true" weight="0.17575084" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -511,7 +483,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49944383" weight="0.3852544" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005562" side_tool="true" weight="0.3852544" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32917964" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32848233" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Spring" order="13" />
@@ -530,9 +502,13 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="readme" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="info:20200729" />
-    <option name="LAST_COMMIT_MESSAGE" value="info:20200729" />
+    <MESSAGE value="info:20200811  --  nio" />
+    <option name="LAST_COMMIT_MESSAGE" value="info:20200811  --  nio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -574,30 +550,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/java/jdk1.8.0_91/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="175" column="24" lean-forward="true" selection-start-line="175" selection-start-column="24" selection-end-line="175" selection-end-column="24" />
-          <folding>
-            <element signature="e#4504#4505#0" expanded="true" />
-            <element signature="e#4572#4573#0" expanded="true" />
-            <element signature="e#4725#4726#0" expanded="true" />
-            <element signature="e#4793#4794#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/jdk1.8.0_91/src.zip!/java/lang/StringCoding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="146" column="47" selection-start-line="146" selection-start-column="47" selection-end-line="146" selection-end-column="47" />
-          <folding>
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1626#1627#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/java/jdk1.8.0_91/src.zip!/java/util/jar/Attributes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -981,10 +933,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/systemDesign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nio/ClassicReactor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="122" column="27" lean-forward="true" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
+        <state relative-caret-position="459">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3139#3140#0" expanded="true" />
@@ -992,6 +951,13 @@
             <element signature="e#3251#3252#0" expanded="true" />
             <element signature="e#3287#3288#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/systemDesign/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="801">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
